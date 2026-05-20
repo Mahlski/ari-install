@@ -1,0 +1,80 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(obsidian-mahlski)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:archlinux.org)",
+      "WebFetch(domain:hypr.land)",
+      "WebFetch(domain:wiki.hypr.land)",
+      "WebFetch(domain:wiki.hyprland.org)",
+      "WebFetch(domain:cli.github.com)",
+      "WebFetch(domain:www.techradar.com)",
+      "WebFetch(domain:www.whathifi.com)",
+      "Bash(fish *)",
+      "Bash(paru *)",
+      "Bash(git --version)",
+      "Bash(git clone *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git config *)",
+      "Bash(git push *)",
+      "Bash(gh auth *)",
+      "Bash(claude plugin *)",
+      "Bash(command -v stow)",
+      "Bash(stow --version)",
+      "Bash(stow -v config claude ssh local)",
+      "Bash(chmod 600 ~/dotfiles/ssh/.ssh/config)",
+      "Bash(python3 *)",
+      "Bash(systemctl status *)",
+      "Bash(systemctl --user status)",
+      "Bash(systemctl --user daemon-reload)",
+      "Bash(pacman *)",
+      "Bash(lscpu)",
+      "Bash(lsblk -f -o NAME,FSTYPE,LABEL,SIZE,FSUSE%,MOUNTPOINTS)",
+      "Bash(dmesg)",
+      "Read(//etc/**)",
+      "Read(//tmp/**)",
+      "Read(//usr/bin/**)",
+      "Read(//proc/**)",
+      "Read(//dev/**)"
+    ],
+    "defaultMode": "plan"
+  },
+  "mcpServers": {
+    "obsidian": {
+      "command": "npx",
+      "args": ["-y", "obsidian-mcp", "/home/guido/Mahlski"]
+    }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/guido/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true,
+    "document-skills@anthropic-agent-skills": true,
+    "frontend-design@claude-plugins-official": false,
+    "lua-lsp@claude-plugins-official": true,
+    "caveman@caveman": true
+  },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    },
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  },
+  "theme": "auto",
+  "editorMode": "normal",
+  "remoteControlAtStartup": true,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true
+}
