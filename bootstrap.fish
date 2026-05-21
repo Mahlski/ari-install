@@ -29,11 +29,14 @@ set packages \
     limine mangohud mesa-utils network-manager-applet nvtop nwg-look obsidian \
     pacman-contrib pavucontrol pcmanfm pipewire pipewire-alsa pipewire-jack \
     pipewire-pulse python-pipx qbz-bin ripgrep rsync slurp steam stow ufw \
-    unzip vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
+    unzip vkmark waybar webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
     xwayland-satellite
 yay -S --needed --noconfirm $packages
 xdg-user-dirs-update
+
+# Disable fish welcome message globally (universal var)
+set -U fish_greeting ""
 
 # --- 3. Claude (desktop + code) ---
 echo "==> Installing Claude desktop + Claude Code..."

@@ -5,7 +5,7 @@
     "audio": "pipewire"
   },
   "bootloader_config": {
-    "bootloader": "Systemd-boot",
+    "bootloader": "Limine",
     "uki": false,
     "removable": false
   },
