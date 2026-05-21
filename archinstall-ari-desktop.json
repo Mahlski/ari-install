@@ -10,53 +10,7 @@
     "removable": false
   },
   "debug": false,
-  "disk_config": {
-    "config_type": "manual_partitioning",
-    "device_modifications": [
-      {
-        "device": "/dev/nvme0n1",
-        "wipe": true,
-        "partitions": [
-          {
-            "btrfs": [],
-            "flags": ["boot"],
-            "fs_type": "fat32",
-            "size": {"sector_size": null, "unit": "GiB", "value": 1},
-            "mount_options": [],
-            "mountpoint": "/boot",
-            "obj_id": "efi-part",
-            "start": {"sector_size": null, "unit": "MiB", "value": 1},
-            "status": "create",
-            "type": "primary"
-          },
-          {
-            "btrfs": [],
-            "flags": [],
-            "fs_type": "linux-swap",
-            "size": {"sector_size": null, "unit": "GiB", "value": 32},
-            "mount_options": [],
-            "mountpoint": null,
-            "obj_id": "swap-part",
-            "start": {"sector_size": null, "unit": "MiB", "value": 1025},
-            "status": "create",
-            "type": "primary"
-          },
-          {
-            "btrfs": [],
-            "flags": [],
-            "fs_type": "ext4",
-            "size": {"sector_size": null, "unit": "Percent", "value": 100},
-            "mount_options": [],
-            "mountpoint": "/",
-            "obj_id": "root-part",
-            "start": {"sector_size": null, "unit": "MiB", "value": 33793},
-            "status": "create",
-            "type": "primary"
-          }
-        ]
-      }
-    ]
-  },
+  "disk_config": null,
   "disk_encryption": null,
   "hostname": "ari",
   "kernels": ["linux"],
