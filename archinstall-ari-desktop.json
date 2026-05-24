@@ -1,96 +1,102 @@
 {
-  "additional-repositories": ["multilib"],
-  "archinstall-language": "English",
-  "audio_config": {
-    "audio": "pipewire"
-  },
-  "bootloader_config": {
-    "bootloader": "Limine",
-    "uki": false,
-    "removable": false
-  },
-  "debug": false,
-  "disk_config": null,
-  "disk_encryption": null,
-  "hostname": "ari",
-  "kernels": ["linux"],
-  "locale_config": {
-    "kb_layout": "us",
-    "sys_enc": "UTF-8",
-    "sys_lang": "en_US"
-  },
-  "mirror_config": {
-    "mirror_regions": {
-      "Netherlands": [
-        "https://mirror.nl.leaseweb.net/archlinux/$repo/os/$arch",
-        "https://mirrors.xtom.nl/archlinux/$repo/os/$arch",
-        "https://ftp.nluug.nl/os/Linux/distr/archlinux/$repo/os/$arch"
-      ],
-      "Germany": [
-        "https://ftp.fau.de/archlinux/$repo/os/$arch",
-        "https://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch",
-        "https://mirror.fra10.de.leaseweb.net/archlinux/$repo/os/$arch"
-      ],
-      "Belgium": [
-        "https://mirror.1ago.be/archlinux/$repo/os/$arch"
-      ],
-      "Denmark": [
-        "https://mirrors.dotsrc.org/archlinux/$repo/os/$arch",
-        "https://mirror.group.one/archlinux/$repo/os/$arch"
-      ],
-      "Sweden": [
-        "https://mirror.bahnhof.net/pub/archlinux/$repo/os/$arch",
-        "https://ftp.lysator.liu.se/pub/archlinux/$repo/os/$arch",
-        "https://mirror.accum.se/mirror/archlinux/$repo/os/$arch"
-      ],
-      "Finland": [
-        "https://mirror.5i.fi/archlinux/$repo/os/$arch",
-        "https://mirror.srv.fail/archlinux/$repo/os/$arch"
-      ]
-    }
-  },
-  "network_config": {
-    "type": "nm"
-  },
-  "ntp": true,
-  "offline": false,
-  "packages": [
-    "amd-ucode",
-    "base",
-    "base-devel",
-    "bash-completion",
-    "dosfstools",
-    "efibootmgr",
-    "fish",
-    "git",
-    "gvfs",
-    "linux",
-    "linux-firmware",
-    "linux-headers",
-    "man-db",
-    "man-pages",
-    "nano",
-    "nano-syntax-highlighting",
-    "neovim",
-    "networkmanager",
-    "ntfs-3g",
-    "sof-firmware",
-    "stow",
-    "sudo",
-    "tree",
-    "ttf-jetbrains-mono-nerd",
-    "xdg-user-dirs",
-    "nvidia-open-dkms",
-    "lib32-nvidia-utils",
-    "vulkan-icd-loader",
-    "lib32-vulkan-icd-loader",
-    "vulkan-tools",
-    "nvidia-settings"
-  ],
-  "parallel_downloads": 5,
-  "profile_config": null,
-  "script": "guided",
-  "silent": false,
-  "swap": false,
-  "timezone": "Europe/Amsterdam"
+    "additional-repositories": [
+        "multilib"
+    ],
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader_config": {
+        "bootloader": "Limine",
+        "uki": false,
+        "removable": false
+    },
+    "debug": false,
+    "disk_config": null,
+    "disk_encryption": null,
+    "hostname": "ari",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "mirror_config": {
+        "mirror_regions": {
+            "Netherlands": [
+                "https://mirror.nl.leaseweb.net/archlinux/$repo/os/$arch",
+                "https://mirrors.xtom.nl/archlinux/$repo/os/$arch",
+                "https://ftp.nluug.nl/os/Linux/distr/archlinux/$repo/os/$arch"
+            ],
+            "Germany": [
+                "https://ftp.fau.de/archlinux/$repo/os/$arch",
+                "https://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch",
+                "https://mirror.fra10.de.leaseweb.net/archlinux/$repo/os/$arch"
+            ],
+            "Belgium": [
+                "https://mirror.1ago.be/archlinux/$repo/os/$arch"
+            ],
+            "Denmark": [
+                "https://mirrors.dotsrc.org/archlinux/$repo/os/$arch",
+                "https://mirror.group.one/archlinux/$repo/os/$arch"
+            ],
+            "Sweden": [
+                "https://mirror.bahnhof.net/pub/archlinux/$repo/os/$arch",
+                "https://ftp.lysator.liu.se/pub/archlinux/$repo/os/$arch",
+                "https://mirror.accum.se/mirror/archlinux/$repo/os/$arch"
+            ],
+            "Finland": [
+                "https://mirror.5i.fi/archlinux/$repo/os/$arch",
+                "https://mirror.srv.fail/archlinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "offline": false,
+    "packages": [
+        "amd-ucode",
+        "base",
+        "base-devel",
+        "bash-completion",
+        "dosfstools",
+        "efibootmgr",
+        "fish",
+        "git",
+        "gvfs",
+        "inetutils",
+        "jq",
+        "linux",
+        "linux-firmware",
+        "linux-headers",
+        "man-db",
+        "man-pages",
+        "nano",
+        "nano-syntax-highlighting",
+        "neovim",
+        "networkmanager",
+        "ntfs-3g",
+        "sof-firmware",
+        "stow",
+        "sudo",
+        "tree",
+        "ttf-jetbrains-mono-nerd",
+        "xdg-user-dirs",
+        "nvidia-open-dkms",
+        "lib32-nvidia-utils",
+        "vulkan-icd-loader",
+        "lib32-vulkan-icd-loader",
+        "vulkan-tools",
+        "nvidia-settings"
+    ],
+    "parallel_downloads": 5,
+    "profile_config": null,
+    "script": "guided",
+    "silent": false,
+    "swap": false,
+    "timezone": "Europe/Amsterdam"
 }
