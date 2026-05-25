@@ -80,12 +80,16 @@ else
 end
 
 # --- Settings ---
-if test -f ~/.claude/settings.json
-    cp ~/.claude/settings.json ~/.claude/settings.json.bak
-    echo "==> Backed up settings.json → settings.json.bak"
+if test -L ~/.claude/settings.json
+    echo "==> Settings: symlink (dotfiles-managed) — skip"
+else
+    if test -f ~/.claude/settings.json
+        cp ~/.claude/settings.json ~/.claude/settings.json.bak
+        echo "==> Backed up settings.json → settings.json.bak"
+    end
+    cp $repo_dir/settings-template.json ~/.claude/settings.json
+    echo "==> Wrote ~/.claude/settings.json"
 end
-cp $repo_dir/settings-template.json ~/.claude/settings.json
-echo "==> Wrote ~/.claude/settings.json"
 
 # --- Done ---
 echo ""
