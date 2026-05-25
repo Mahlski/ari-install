@@ -74,6 +74,12 @@ chmod 600 ~/dotfiles/ssh/.ssh/config
 echo "==> Bootstrap complete. Dotfiles at ~/dotfiles (stow)."
 echo "==> Open a NEW shell, then run:  fish ~/.local/bin/setup/post-install.fish"
 echo ""
+echo "    After post-install, from a Hyprland session:"
+echo "      fish ~/.local/bin/setup/setup-webapps.fish"
+echo ""
+echo "    After vault (~/Mahlski) is set up:"
+echo "      fish ~/.local/bin/setup/setup-obsidian-mcp.fish"
+echo ""
 echo "    SSH keys are NOT in the repo. To push changes later, generate a key and"
 echo "    switch the remote to SSH:"
 echo '      ssh-keygen -t ed25519'
