@@ -85,6 +85,7 @@
         "sudo",
         "tree",
         "ttf-jetbrains-mono-nerd",
+        "ttf-sourcecodepro-nerd",
         "xdg-user-dirs",
         "nvidia-open-dkms",
         "lib32-nvidia-utils",
