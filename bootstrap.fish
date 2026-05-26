@@ -21,13 +21,13 @@ end
 # Ari/base-configs/ari-base-pkg.md (yay section), minus the laptop-only items.
 echo "==> Installing packages..."
 set packages \
-    alsa-utils btop claude-desktop-native dunst fastfetch fd file-roller \
-    firefox fuzzel fzf gamemode gamescope gimp glmark2 grim \
+    aerc alsa-utils btop claude-desktop-native dunst fastfetch fd file-roller \
+    firefox fuzzel fzf gamemode gamescope gimp glmark2 gnupg grim \
     gst-plugin-pipewire hardinfo2 heroic-games-launcher-bin hypridle hyprland \
     hyprlock hyprpaper hyprpolkitagent hyprshutdown kitty less lib32-gamemode \
     lib32-mangohud lib32-pipewire libreoffice-still libreoffice-still-nl \
     limine lua-language-server mangohud mesa-utils network-manager-applet nvtop nwg-look obsidian \
-    pacman-contrib pavucontrol pcmanfm pipewire pipewire-alsa pipewire-jack \
+    pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
     pipewire-pulse python-pipx qbz-bin ripgrep rsync slurp steam stow ufw \
     ttf-sourcecodepro-nerd unzip vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
