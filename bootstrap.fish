@@ -45,9 +45,23 @@ fish_add_path -g ~/.local/bin
 yay -S --needed --noconfirm claude-desktop-native
 curl -fsSL https://claude.ai/install.sh | bash
 
-# --- 4. dotfiles (stow from public HTTPS — no SSH key needed) ---
-echo "==> Cloning dotfiles over HTTPS..."
-git clone https://github.com/Mahlski/dotfiles.git ~/dotfiles
+# --- 4. dotfiles (private repo — read-only token clone over HTTPS) ---
+# Repo is private. A fresh box has no SSH key yet, and `gh auth login` device
+# flow fails here (no Secret Service / keyring on minimal Arch). So clone with a
+# fine-grained read-only PAT pasted at the prompt, then scrub it from the repo
+# config. Switch to SSH after key setup (see end of script).
+#
+# NOTE: this script is run as `curl ... | fish`, so stdin is the pipe, not the
+# keyboard. Read the token from /dev/tty so the prompt reaches the terminal.
+echo "==> Cloning private dotfiles repo over HTTPS."
+echo "    Need a fine-grained PAT: repo Mahlski/dotfiles, Contents -> Read-only."
+echo "    Create at: https://github.com/settings/personal-access-tokens/new"
+read -s -P "    Paste dotfiles read token (hidden): " gh_token < /dev/tty
+echo
+git clone https://x-access-token:$gh_token@github.com/Mahlski/dotfiles.git ~/dotfiles
+set -e gh_token
+# scrub the token out of .git/config — leave a clean tokenless HTTPS remote
+git -C ~/dotfiles remote set-url origin https://github.com/Mahlski/dotfiles.git
 
 echo "==> Stowing dotfiles..."
 cd ~/dotfiles
