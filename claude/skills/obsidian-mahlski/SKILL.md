@@ -1,13 +1,11 @@
 ---
 name: obsidian-mahlski
 description: >
-  Complete reference for working inside the Mahlski Obsidian vault at ~/Mahlski.
-  Trigger when the user asks to create, edit, move, rename, or organize notes;
-  says "add a note about X", "update my backlog", "add this to my vault";
-  references a note by name or pastes a path under ~/Mahlski; asks to
-  read/write anything in the vault; asks to save something for later reading;
-  or says "add this to my inbox". Load proactively any time Obsidian or
-  vault context is relevant.
+  Reference for working inside the Mahlski Obsidian vault at ~/Mahlski.
+  Trigger when cwd is ~/Mahlski or under it (load proactively then), or when the
+  user creates/edits/moves/lists/searches/organizes notes, references the
+  backlog, inbox, daily notes, handoffs, or summaries, pastes a vault path, or
+  mentions Obsidian or the vault.
 ---
 
 # Mahlski Vault — Working Reference
