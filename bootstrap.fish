@@ -28,7 +28,7 @@ set packages \
     lib32-mangohud lib32-pipewire libreoffice-still libreoffice-still-nl \
     limine lua-language-server mangohud mesa-utils msmtp network-manager-applet notmuch nvtop nwg-look obsidian openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
-    pipewire-pulse python-pipx qbz-bin ripgrep rsync slurp steam stow ufw \
+    pipewire-pulse python-pipx qbz-bin ripgrep rsync slurp smartmontools steam stow ufw \
     ttf-sourcecodepro-nerd unzip vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
     xwayland-satellite
