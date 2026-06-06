@@ -26,7 +26,8 @@ set packages \
     gst-plugin-pipewire hardinfo2 heroic-games-launcher-bin hyprcaffeine hypridle hyprland \
     hyprlock hyprpaper hyprpolkitagent hyprshutdown isync kitty less lib32-gamemode \
     lib32-mangohud lib32-pipewire libreoffice-still libreoffice-still-nl \
-    limine lua-language-server mangohud mesa-utils msmtp network-manager-applet notmuch nvtop nwg-look obsidian openssh \
+    limine lua-language-server mangohud mesa-utils msmtp network-manager-applet notmuch \
+    noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
     pipewire-pulse python-pipx qbz-bin ripgrep rsync slurp smartmontools steam stow ufw \
     ttf-sourcecodepro-nerd unzip vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
