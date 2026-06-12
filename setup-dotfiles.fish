@@ -54,6 +54,11 @@ gh ssh-key add $KEY.pub --title (uname -n); or echo "    (key may already be on 
 echo "==> Cloning dotfiles over SSH..."
 git clone git@github.com:Mahlski/dotfiles.git ~/dotfiles
 
+# core.hooksPath is repo-local config — a fresh clone never has it, so the
+# commit-guard (.githooks/pre-commit, normalizes settings.json) must be
+# re-activated on every machine:
+git -C ~/dotfiles config core.hooksPath .githooks
+
 # --- 6. stow ---
 echo "==> Stowing dotfiles..."
 cd ~/dotfiles
