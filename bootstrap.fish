@@ -21,18 +21,18 @@ end
 # Ari/base-configs/ari-base-pkg.md (yay section), minus the laptop-only items.
 echo "==> Installing packages..."
 set packages \
-    aerc alsa-utils btop claude-desktop-native dunst fastfetch fd file-roller \
-    firefox fuzzel fzf gamemode gamescope gimp github-cli glmark2 gnupg grim \
+    aerc alsa-utils arp-scan btop claude-desktop-native dmidecode dunst fastfetch fd file-roller \
+    firefox fuzzel fzf gamemode gamescope gimp git-filter-repo github-cli glmark2 gnupg grim \
     gst-plugin-pipewire hardinfo2 heroic-games-launcher-bin hyprcaffeine hypridle hyprland \
     hyprlock hyprpaper hyprpolkitagent hyprshutdown isync kitty less lib32-gamemode \
-    lib32-mangohud lib32-pipewire libreoffice-still libreoffice-still-nl \
-    limine lua-language-server mangohud mesa-utils msmtp network-manager-applet notmuch \
+    lib32-mangohud lib32-pipewire libpulse libreoffice-still libreoffice-still-nl \
+    limine lua-language-server mangohud mesa-utils mpv-full-build-git msmtp network-manager-applet notmuch \
     noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
-    pipewire-pulse python-pipx qbz-bin ripgrep rsync slurp smartmontools steam stow ufw \
-    ttf-sourcecodepro-nerd unzip vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
+    pipewire-pulse python-pipx qbittorrent qbz-bin ripgrep rpi-imager rsync shellcheck slurp smartmontools steam stow syncthing ufw \
+    ttf-sourcecodepro-nerd unzip uv vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
-    xwayland-satellite
+    xwayland-satellite zram-generator
 yay -S --needed --noconfirm $packages
 xdg-user-dirs-update
 
