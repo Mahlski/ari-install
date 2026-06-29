@@ -21,7 +21,7 @@ end
 # Ari/base-configs/ari-base-pkg.md (yay section), minus the laptop-only items.
 echo "==> Installing packages..."
 set packages \
-    aerc alsa-utils arp-scan btop claude-desktop-native dmidecode dunst ethtool fastfetch fd file-roller \
+    aerc alsa-utils arp-scan btop dmidecode dunst ethtool fastfetch fd file-roller \
     firefox fuzzel fzf gamemode gamescope gimp git-filter-repo github-cli glmark2 gnupg grim \
     gst-plugin-pipewire hardinfo2 heroic-games-launcher-bin hyprcaffeine hypridle hyprland \
     hyprlock hyprpaper hyprpolkitagent hyprshutdown isync kitty less lib32-gamemode \
@@ -39,11 +39,10 @@ xdg-user-dirs-update
 # Disable fish welcome message globally (universal var)
 set -U fish_greeting ""
 
-# --- 3. Claude (desktop + code) ---
-echo "==> Installing Claude desktop + Claude Code..."
+# --- 3. Claude Code ---
+echo "==> Installing Claude Code..."
 mkdir -p ~/.local/bin
 fish_add_path -g ~/.local/bin
-yay -S --needed --noconfirm claude-desktop-native
 curl -fsSL https://claude.ai/install.sh | bash
 
 # --- 4. dotfiles auth + clone (separate script — needs a real terminal) ---
