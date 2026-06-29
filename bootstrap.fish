@@ -21,15 +21,15 @@ end
 # Ari/base-configs/ari-base-pkg.md (yay section), minus the laptop-only items.
 echo "==> Installing packages..."
 set packages \
-    aerc alsa-utils arp-scan btop claude-desktop-native dmidecode dunst fastfetch fd file-roller \
+    aerc alsa-utils arp-scan btop claude-desktop-native dmidecode dunst ethtool fastfetch fd file-roller \
     firefox fuzzel fzf gamemode gamescope gimp git-filter-repo github-cli glmark2 gnupg grim \
     gst-plugin-pipewire hardinfo2 heroic-games-launcher-bin hyprcaffeine hypridle hyprland \
     hyprlock hyprpaper hyprpolkitagent hyprshutdown isync kitty less lib32-gamemode \
-    lib32-mangohud lib32-pipewire libpulse libreoffice-still libreoffice-still-nl \
+    lib32-mangohud lib32-pipewire libnotify libpulse libreoffice-still libreoffice-still-nl \
     limine lua-language-server mangohud mesa-utils mpv-full-build-git msmtp network-manager-applet notmuch \
-    noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian openssh \
+    noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian ollama-cuda openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
-    pipewire-pulse python-pipx qbittorrent qbz-bin ripgrep rpi-imager rsync shellcheck slurp smartmontools steam syncthing ufw \
+    pipewire-pulse python-pipx qbz-bin ripgrep rsync shellcheck slurp smartmontools steam syncthing ufw \
     unzip uv vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
     xwayland-satellite zram-generator
