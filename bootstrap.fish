@@ -29,8 +29,8 @@ set packages \
     limine lua-language-server mangohud mesa-utils mpv-full-build-git msmtp network-manager-applet notmuch \
     noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
-    pipewire-pulse python-pipx qbittorrent qbz-bin ripgrep rpi-imager rsync shellcheck slurp smartmontools steam stow syncthing ufw \
-    ttf-sourcecodepro-nerd unzip uv vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
+    pipewire-pulse python-pipx qbittorrent qbz-bin ripgrep rpi-imager rsync shellcheck slurp smartmontools steam syncthing ufw \
+    unzip uv vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
     xwayland-satellite zram-generator
 yay -S --needed --noconfirm $packages
