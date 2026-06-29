@@ -41,12 +41,6 @@
     ],
     "defaultMode": "plan"
   },
-  "mcpServers": {
-    "obsidian": {
-      "command": "npx",
-      "args": ["-y", "obsidian-mcp", "/home/guido/Mahlski"]
-    }
-  },
   "statusLine": {
     "type": "command",
     "command": "bash /home/guido/.claude/statusline-command.sh"

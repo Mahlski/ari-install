@@ -88,6 +88,3 @@ echo "==> Open a NEW shell, then run:  fish ~/.local/bin/setup/post-install.fish
 echo ""
 echo "    After post-install, from a Hyprland session:"
 echo "      fish ~/.local/bin/setup/setup-webapps.fish"
-echo ""
-echo "    After vault (~/Mahlski) is set up:"
-echo "      fish ~/.local/bin/setup/setup-obsidian-mcp.fish"

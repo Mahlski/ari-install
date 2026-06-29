@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-# Claude Code + Obsidian MCP setup for Ari desktop
+# Claude Code setup for Ari desktop
 #
 # Prerequisites: git, nodejs/npm
 #   sudo pacman -S --needed git nodejs npm
