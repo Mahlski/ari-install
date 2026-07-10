@@ -63,12 +63,14 @@ git -C ~/dotfiles config core.hooksPath .githooks
 echo "==> Stowing dotfiles..."
 cd ~/dotfiles
 for line in (stow -n config claude git local 2>&1)
-    if string match -qr 'existing target is neither' -- $line
-        set target (string replace -r '.*: ' '' -- $line)
-        set full ~/$target
+    # match both stow <2.4 and >=2.4 conflict wording
+    set -l t (string match -rg 'over existing target (.+) since neither' -- $line)
+    or set t (string match -rg 'existing target is neither a link nor a directory: (.+)' -- $line)
+    if set -q t[1]
+        set -l full ~/$t[1]
         if test -e $full; and not test -L $full
             mv $full $full.bak
-            echo "    backed up: $target"
+            echo "    backed up: $t[1]"
         end
     end
 end
