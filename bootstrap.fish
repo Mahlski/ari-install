@@ -21,7 +21,7 @@ end
 # Ari/base-configs/ari-base-pkg.md (yay section), minus the laptop-only items.
 echo "==> Installing packages..."
 set packages \
-    aerc alsa-utils arp-scan btop claws-mail dmidecode dunst ethtool fastfetch fd file-roller \
+    alsa-utils arp-scan btop claws-mail dmidecode dunst ethtool fastfetch fd file-roller \
     firefox fuzzel fzf gamemode gamescope gimp git-filter-repo github-cli glmark2 gnupg grim \
     gst-plugin-pipewire gumbo-parser hardinfo2 heroic-games-launcher-bin hunspell-en_us hunspell-nl hyprcaffeine hypridle hyprland \
     hyprlock hyprpaper hyprpolkitagent hyprshutdown isync kitty less lib32-gamemode \
