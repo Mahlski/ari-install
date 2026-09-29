@@ -30,7 +30,7 @@ set packages \
     noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian ollama-cuda openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
     pipewire-pulse python-pipx qbz-bin ripgrep rsync shellcheck slurp smartmontools steam syncthing ufw \
-    unzip uv vkmark waybar-git webapp-manager wget wireplumber wl-clipboard \
+    unzip uv vkmark vlc vlc-plugins-all waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
     xwayland-satellite zram-generator
 yay -S --needed --noconfirm $packages
