@@ -29,7 +29,7 @@ set packages \
     limine lua-language-server mangohud mesa-utils mpv-full-build-git msmtp network-manager-applet notmuch \
     noto-fonts noto-fonts-cjk noto-fonts-emoji nvtop nwg-look obsidian ollama-cuda openssh \
     pacman-contrib pass pavucontrol pcmanfm pinentry pipewire pipewire-alsa pipewire-jack \
-    pipewire-pulse python-pipx qbz-bin ripgrep rsync shellcheck slurp smartmontools steam syncthing ufw \
+    pipewire-pulse python-pipx qobuz-player-bin ripgrep rsync shellcheck slurp smartmontools steam syncthing ufw \
     unzip uv vkmark vlc vlc-plugins-all waybar-git webapp-manager wget wireplumber wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils \
     xwayland-satellite zram-generator
