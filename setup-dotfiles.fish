@@ -12,10 +12,12 @@
 
 set KEY ~/.ssh/id_ed25519
 
+# pre-create dirs stow would otherwise fold into the repo
+mkdir -p ~/.ssh ~/.config/obsidian
+
 # --- 1. SSH keypair ---
 echo "==> Checking SSH keypair..."
 if not test -f $KEY
-    mkdir -p ~/.ssh
     chmod 700 ~/.ssh
     echo "    Generating ed25519 keypair (Enter for no passphrase)..."
     ssh-keygen -t ed25519 -C (uname -n) -f $KEY
